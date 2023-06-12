@@ -1,0 +1,274 @@
+/* 1rem = 1em = 16px */
+
+
+/*** width < 1200 ***/
+@media (max-width: 75em){
+    html{
+            /* 9px / 16px = 56.25% */
+            font-size: 56.25%;
+        }
+
+    .header{
+        background-color: #000;
+     }
+
+     .header-el-1{
+         display: none;
+     }
+
+     .header-el-2{
+         display: none;
+     }
+
+     .header-el-0{
+        display: inline-block;
+    }
+
+    
+}
+
+/*** width < 1072 ***/
+@media (max-width: 67em){
+    html{
+        /* 8px / 16px = 56.25% */
+        font-size: 50%;
+    }
+
+    .grid-features{
+        column-gap: 2.4rem;
+    }
+
+    .description-video-box{
+        width: 44rem;
+    }
+
+    .description-img-box{
+        width: 30rem;
+    }
+
+    .grid{
+        row-gap: 6.4rem;
+        column-gap: 4.2rem;
+    }
+
+    .table-text, .table-header-text{
+        font-size: 1.6rem;
+    }
+
+    .heading-primary {
+        font-size: 5.4rem;
+    }
+
+    .heading-secondary {
+        font-size: 2rem;
+    }
+
+    .btn-download:link, .btn-download:visited, .btn-download-bot:link, .btn-download-bot:visited {
+        padding: 1.8rem 10rem;
+    }
+
+    .faq-heading-lg {
+        font-size: 3.4rem;
+    }
+
+    .faq-heading-md {
+        font-size: 2.8rem;
+    }
+}
+
+
+/*** width < 800 ***/
+@media (max-width: 50em){
+    .header{
+        height: 6rem;
+        padding: 0 1.6rem 0 3rem;
+    }
+
+    .header-logo{
+        transform: translate(0%, -135%);
+    }
+
+    .grid{
+        row-gap: 4.2rem;
+        column-gap: 2.4rem;
+    }
+
+    .grid--2-cols{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .description-title{
+        padding-bottom: 2.4rem;
+    }
+
+    .description-text-box:nth-child(2){
+        grid-row: 1;
+    }
+
+    .description-text-box:nth-child(6){
+        grid-row: 5;
+    }
+
+    .description-video-box{
+        width: 65rem;
+    }
+
+    .description-img-box{
+        width: 50rem;
+    }
+
+    .table-element{
+        flex-direction: column;
+        row-gap: 2.4rem;
+    }
+
+    .table-container-icons{
+        align-self: center;
+    }
+    
+}
+
+
+/*** width < 712 ***/
+@media (max-width: 45em){
+    html{
+        /* 7px / 16px = 43.75% */
+        font-size: 43.7%;
+    }
+
+    .preview-desktop{
+        content: url(../img/hero-mobile.png);
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .grid--3-cols{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .description-video-box{
+        width: 44rem;
+    }
+
+    .description-img-box{
+        width: 30rem;
+    }
+    .grid-features{
+        row-gap: 0;
+    }
+    
+
+    .section-features{
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        width: 60rem;
+    }
+
+    .section-versus{
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+        width: 60rem;
+    }
+
+    .table-container-icons{
+        padding-right: 0.4rem;
+        gap: 0;
+    }
+
+    .feature-img-container{
+        padding-left: 6.2rem;
+        padding-right: 6.2rem;
+    }
+
+    
+
+}
+
+/*** width < 496 ***/
+@media (max-width: 31em){
+    .section-description{
+        padding: 0 4.2rem;
+    }
+
+    .section-features{
+        width: 100%;
+    }
+
+    .heading-primary {
+        font-size: 4.2rem;
+    }
+
+    .heading-secondary{
+        font-size: 1.6rem;
+    }
+
+    .description-video-box{
+        width: 100%;
+    }
+
+    .description-img-box{
+        width: 80%;
+    }
+
+    .section-versus{
+        width: 100%;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .table-icon{
+        width: 5.2rem;
+    }
+
+    .icon-table-title{
+        font-size: 1.2rem;
+    }
+
+    .versus-description{
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .btn-download:link, 
+    .btn-download:visited, 
+    .btn-download-bot:link, 
+    .btn-download-bot:visited{
+        font-size: 2rem;
+        padding: 1.8rem 6.8rem;
+        border-radius: 80px;
+    }
+
+}
+
+/*** width < 336 ***/
+@media (max-width: 21em){
+    .heading-primary {
+        font-size: 3.2rem;
+    }
+
+    .footer-bot-container-text:link,
+    .footer-bot-container-text:visited{
+        font-size: 1.2rem;
+    }
+
+    .footer-bot-container-text{
+        font-size: 0.9rem;
+    }
+
+    .btn-download:link, 
+    .btn-download:visited, 
+    .btn-download-bot:link, 
+    .btn-download-bot:visited{
+        font-size: 2rem;
+        padding: 1.8rem 4.2rem;
+        border-radius: 80px;
+    }
+
+    .section-description{
+        padding: 0 1.2rem;
+    }
+}
