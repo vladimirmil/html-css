@@ -8,6 +8,10 @@
             font-size: 56.25%;
         }
 
+    .preview-desktop{
+         width: 78%;
+    }
+
     .header{
         background-color: #000;
      }
