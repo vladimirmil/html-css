@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Sites</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html{
+            font-size: 62.5%;
+        }
+
+
+        body{
+            font-family: 'Roboto', sans-serif;
+            line-height: 1;
+            font-weight: 400;
+            color: #212529;
+            overflow-x: hidden;
+        }
+
+
+        .container{
+            max-width: 120rem;
+            padding: 9.6rem 3.2rem;
+            margin: 0 auto;
+        }
+    
+
+        .site-cards{
+            display: flex;
+            gap: 1.6rem;
+        }
+
+
+        .site-card{
+            border-radius: 11px;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, 
+                        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            transition: all 0.4s;
+        }
+
+        
+        .site-card-normal{
+            width: 10rem;
+            height: 14rem;
+        }
+
+
+        .site-card-wide{
+            width: 20rem;
+            height: 14rem;
+        }
+
+
+        .site-card-link,
+        .site-card-container{
+            width: 100%;
+            height: 100%;
+        }
+
+
+        .site-card-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 2.4rem 0;
+        }
+
+
+        .site-card-link:link,
+        .site-card-link:visited{
+            text-decoration: none;
+            color: #212529;
+            font-size: 1.4rem;
+        }
+
+
+        .site-cards:hover .site-card:not(:hover){
+            opacity: 0.5;
+        }
+
+        .site-card:hover{
+            transform: translateY(-8px);
+        }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="site-cards">
+                <div class="site-card site-card-normal">
+                    <a href="Brave/index.html" class="site-card-link">
+                        <div class="site-card-container">
+                            <div class="site-card-img-container">
+                                <img class="site-card-img" src="Brave/img/brave-logo-sans-text.svg"/>
+                            </div>
+                            <span>brave.com</span>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="site-card site-card-wide">
+                    <a href="Havok/index.html" class="site-card-link">
+                        <div class="site-card-container">
+                            <div class="site-card-img-container">
+                                <img class="site-card-img" src="Havok/img/havok-logo-footer-162x54.png"/>
+                            </div>
+                            <span>havok.com</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
