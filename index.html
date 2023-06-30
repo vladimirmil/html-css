@@ -54,19 +54,6 @@
             transition: all 0.4s;
         }
 
-        
-        .site-card-normal{
-            width: 10rem;
-            height: 14rem;
-        }
-
-
-        .site-card-wide{
-            width: 20rem;
-            height: 14rem;
-        }
-
-
         .site-card-link,
         .site-card-container{
             width: 100%;
@@ -79,8 +66,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            gap: 1rem;
-            padding: 2.4rem 0;
+            gap: 2.4rem;
+            padding: 2.4rem 2.4rem 1.4rem 2.4rem;
         }
 
 
@@ -93,11 +80,22 @@
 
 
         .site-cards:hover .site-card:not(:hover){
+            filter: grayscale(100);
             opacity: 0.5;
         }
 
         .site-card:hover{
-            transform: translateY(-8px);
+           /*transform: translateY(-8px);*/
+            scale: 1.06;
+        }
+
+        .site-card-img-container{
+            height: 6.4rem;
+        }
+
+        .site-card-img{
+            width: 100%;
+            height: 100%;
         }
 
         
@@ -110,7 +108,8 @@
     <main>
         <div class="container">
             <div class="site-cards">
-                <div class="site-card site-card-normal">
+
+                <div class="site-card">
                     <a href="Brave/index.html" class="site-card-link">
                         <div class="site-card-container">
                             <div class="site-card-img-container">
@@ -121,16 +120,28 @@
                     </a>
                 </div>
     
-                <div class="site-card site-card-wide">
+                <div class="site-card">
                     <a href="Havok/index.html" class="site-card-link">
                         <div class="site-card-container">
-                            <div class="site-card-img-container">
+                            <div class="site-card-img-container-">
                                 <img class="site-card-img" src="Havok/img/havok-logo-footer-162x54.png"/>
                             </div>
                             <span>havok.com</span>
                         </div>
                     </a>
                 </div>
+
+                <div class="site-card">
+                    <a href="Fortan/index.html" class="site-card-link">
+                        <div class="site-card-container">
+                            <div class="site-card-img-container">
+                                <img class="site-card-img" src="Fortan/img/fortran-logo-256x256.png"/>
+                            </div>
+                            <span>fortran-lang.org</span>
+                        </div>
+                    </a>
+                </div>
+
             </div>
         </div>
     </main>

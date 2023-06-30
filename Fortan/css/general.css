@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #c0c0c0;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 145rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.padding-lr-s{
+    padding: 0 1.2rem;
+}
+
+.padding-bot-2-4{
+    padding-bottom: 2.4rem !important;
+}
+
+.padding-bot-m{
+    padding-bottom: 4.2rem !important;
+}
+
+
+.link:link,
+.link:visited{
+    text-decoration: none;
+    color: #41869c;
+}
+
+.link:hover,
+.link:active{
+    color: #ec8f47;
+    text-decoration: underline;
+}
