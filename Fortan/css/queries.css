@@ -1,0 +1,76 @@
+/* 1rem = 1em = 16px */
+
+
+/*** width < 1200 ***/
+@media (max-width: 75em){
+    html{
+            /* 9px / 16px = 56.25% */
+            font-size: 56.25%;
+    }
+
+    .section-news,
+    .sticky-no-border{
+        display: none;
+    }
+
+    .content{
+        grid-template-columns: 0.253fr 1fr;
+    }
+
+    .section-content{
+        padding-right: 0;
+    }
+
+    /*
+    .section-content{
+        grid-column: span 2;
+        padding-right: 0;
+    }
+
+    */
+    
+}
+
+/*** width < 960 ***/
+@media (max-width: 60em){
+    .menu-mobile-container{
+        display: inline-block;
+    }
+
+    .nav-container-right{
+        display: none;
+    }
+}
+
+/*** width < 720 ***/
+@media (max-width: 45em){
+    .content{
+        grid-template-columns: 1fr;
+    }
+
+    .section-content{
+        padding-right: 2.2rem;
+        padding-left: 2.2rem;
+        grid-row: 1;
+    }
+
+    .sticky{
+        position:relative;
+        top: 0;
+        height: auto;
+        overflow-y: hidden;
+    }
+
+    .make-fortran-better{
+        display: none;
+    }
+
+    .make-fortran-better-join{
+        display: block;
+    }
+
+    .join-heading-primary{
+        padding-top: 1.2rem;
+    }
+
+}

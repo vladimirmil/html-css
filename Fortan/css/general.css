@@ -17,6 +17,27 @@ body{
     overflow-x: hidden;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: transparant; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #c0c0c0;
+    border-radius: 3px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 .container{
     max-width: 145rem;
     padding: 0 3.2rem;
@@ -46,4 +67,40 @@ body{
 .link:active{
     color: #ec8f47;
     text-decoration: underline;
+}
+
+
+.sticky{
+    position: sticky;
+    top: 6.8rem;
+    height: 93vh;
+    overflow-y: scroll;
+}
+
+
+.sticky-no-border{
+    position: sticky;
+    top: 0;
+    height: 92vh;
+    overflow-y: scroll;
+}
+
+.sticky::-webkit-scrollbar{
+    width: 4px;
+    border-right: 1px solid #fff;
+}
+
+.sticky-no-border::-webkit-scrollbar{
+    width: 4px;
+}
+
+.sticky::-webkit-scrollbar-thumb,
+.sticky-no-border::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 3px;
+}
+  
+.sticky:hover::-webkit-scrollbar-thumb,
+.sticky-no-border::-webkit-scrollbar-thumb{
+    background-color: #c0c0c0;
 }
