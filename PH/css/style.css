@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(255, 255, 255);
+}
+.section-main {
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.inp {
+    margin: 0rem 1rem;
+    width: 6rem;
+    font-size: 4rem;
+}
+
+.btn {
+    font-size: 2rem;
+}
+
+#same-day {
+    margin-left: 2rem;
+}
+
+#result {
+    font-size: 6rem;
+}
